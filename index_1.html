@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    
+    <title>Superhero App</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="container-fluid">
+        <a class="navbar-heading" href="index_1.html">
+          Marvel Superhero Hunter
+        </a>
+        <div class="d-flex">
+          <button class="btn  btn-sm" type="submit">
+            <a class="nav-link link-light" href="favourite.html"
+              >Favourites</a
+            >
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="homepage">
+      <div class="input-group input-group-sm mb-sm-1 p-lg-5">
+        <input type="text" id='search-string' class="form-control" aria-label="Sizing example input" placeholder='Search here for Superhero' aria-describedby="inputGroup-sizing-sm">
+      </div>
+
+      <section class="result-section">
+        <h2 id="querySection"></h2>
+        <div class="container-fluid mx-auto align-self-center">
+          <div class="mx-auto justify-content-evenly row" id="superhero-list">
+            <template id="canvas">
+              <div
+                class="col-3 shadow-lg p-4 mb-4 m-1  rounded"
+                id="superhero"
+              >
+                <div id="info">
+                  <div id="image-sh">
+                  </div>
+                  <div id="name">Name -</div>
+                  <div id="id">ID</div>
+                  <div id="comic">Comics</div>
+                  <div id="series">series</div>
+                  <div id="stories">stories</div>
+                </div>
+                <div id="buttons" class="d-flex justify-content-between mt-3">
+                  <button
+                    class="btn btn-sm"
+                    id="fav"
+                    onclick="addFunction()"
+                  >
+                    Add to Favourite
+                  </button>
+                  <button class="btn btn-primary btn-sm" id="learn-more">
+                    Learn more
+                  </button>
+                </div>
+              </div>
+            </template>
+          </div>
+        </div>
+      </section>
+
+      <div id="fav-alert">Succesfully! Added to Favourite</div>
+    </div>
+  
+    <script src="index_1.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
